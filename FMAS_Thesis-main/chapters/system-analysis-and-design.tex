@@ -1,0 +1,78 @@
+\chapter{System Analysis and Design}
+\label{chap:system-analysis-and-design}
+
+\intro{Brief introduction to the chapter}\\
+
+\section{Use Cases}
+
+For the study of the product's use cases, diagrams were created.
+Use case diagrams (in English \emph{Use Case Diagram}) are a type of \gls{uml} diagram dedicated to describing the functions or services offered by a system, as perceived and used by the actors interacting with the system itself.
+Since the project is aimed at creating a tool for automating a process, user interactions must obviously be reduced to the bare minimum. For this reason, the use case diagrams are simple and few in number.
+
+\begin{figure}[!h] 
+    \centering 
+
+    \caption{Use Case - UC0: Main Scenario}
+\end{figure}
+
+\begin{usecase}{0}{Main Scenario}
+\usecaseactors{Application Developer}
+\usecasepre{The developer has entered the simulation plugin within the IDE}
+\usecasedesc{The simulation window provides commands to configure, record, or run a test}
+\usecasepost{The system is ready to allow a new interaction}
+\label{uc:main-scenario}
+\end{usecase}
+
+\section{Requirements Traceability}
+
+From a careful analysis of the requirements and use cases carried out on the project, a table was drawn up that traces the requirements in relation to the use cases.\\
+Different types of requirements were identified, and an identification code was used to distinguish them.\\
+The requirements code is structured as R(F/Q/V)(N/D/O) where:
+\begin{enumerate}
+    \item[R =] requirement
+    \item[F =] functional
+    \item[Q =] qualitative
+    \item[V =] constraint
+    \item[N =] mandatory (necessary)
+    \item[D =] desirable
+    \item[O =] optional
+\end{enumerate}
+Tables \ref{tab:functional-requirements}, \ref{tab:qualitative-requirements}, and \ref{tab:constraint-requirements} summarize the requirements and their traceability with the use cases outlined during the analysis phase.
+
+\newpage
+
+\begin{table}%
+\caption{Table of Functional Requirements Traceability}
+\label{tab:functional-requirements}
+\begin{tabularx}{\textwidth}{lXl}
+\hline\hline
+\textbf{Requirement} & \textbf{Description} & \textbf{Use Case}\\
+\hline
+RFN-1     & The interface allows configuring the type of test probes & UC1 \\
+\hline
+\end{tabularx}
+\end{table}%
+
+\begin{table}%
+\caption{Table of Qualitative Requirements Traceability}
+\label{tab:qualitative-requirements}
+\begin{tabularx}{\textwidth}{lXl}
+\hline\hline
+\textbf{Requirement} & \textbf{Description} & \textbf{Use Case}\\
+\hline
+RQD-1    & The performance of the hardware simulator must ensure the correct execution of tests and not generate false negatives & - \\
+\hline
+\end{tabularx}
+\end{table}%
+
+\begin{table}%
+\caption{Table of Constraint Requirements Traceability}
+\label{tab:constraint-requirements}
+\begin{tabularx}{\textwidth}{lXl}
+\hline\hline
+\textbf{Requirement} & \textbf{Description} & \textbf{Use Case}\\
+\hline
+RVO-1    & The library for running automated tests must be reusable & - \\
+\hline
+\end{tabularx}
+\end{table}%

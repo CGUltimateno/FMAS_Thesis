@@ -1,0 +1,25 @@
+\begin{document}
+    \frontmatter
+    \input{preface/title-page}
+    \input{preface/summary}
+    \input{preface/acknowledgements}
+    \input{preface/table-of-contents}
+    \cleardoublepage
+
+    \mainmatter
+    \input{chapters/introduction}
+    \input{chapters/literature-review}
+    \input{chapters/gap-analysis}
+    \input{chapters/system-analysis-and-design}
+    \input{chapters/methodology}
+    \input{chapters/conclusion}
+
+    \appendix
+    \input{appendix/appendix-a}
+
+    \backmatter
+    \printglossary[type=\acronymtype, title=Acronyms and abbreviations, toctitle=Acronyms and abbreviations]
+    \printglossary[type=main, title=Glossary, toctitle=Glossary]
+
+    \input{appendix/bibliography}
+\end{document}
