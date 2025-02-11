@@ -1,34 +1,38 @@
 \chapter{Introduction}
 \label{chap:introduction}
 
-Introduction
+Football, as the world's most popular sport, generates immense interest in predicting match outcomes for fans, analysts, and stakeholders. While traditional football platforms (e.g., \cite{whoscored, transfermarkt}) provide static statistics and live scores, few integrate predictive analytics to forecast results systematically. This thesis addresses this gap by proposing a data-driven football prediction system that combines real-time league data, team/player metrics, and machine learning to deliver actionable insights.  
 
-\section{The Company}
+\section{Motivation and Context}
+Modern football analytics increasingly relies on data to inform decisions, from scouting players to optimizing tactics. However, existing systems often prioritize retrospective analysis over forward-looking predictions or lack transparency in explaining forecasts \cite{squawka, athletic}. By contrast, this work emphasizes:  
+\begin{itemize}
+    \item Real-time updates of league standings, team form, and player availability.
+    \item Interactive dashboards for exploring predictive scenarios (e.g., "What if Player X is injured?").
+    \item Explainable predictions that highlight key factors (e.g., home advantage, recent performance).
+\end{itemize}
 
-Description of the company.
-
-\section{The Idea}
-
-Introduction to the internship idea.
+\section{Objectives and Contributions}
+The primary objective is to design a prediction system that bridges the gap between statistical models and practical usability. Key contributions include:  
+\begin{itemize}
+    \item A centralized platform aggregating data from multiple leagues (e.g., \cite{premier, bundesliga}) and player databases (\cite{transfermarkt}).
+    \item A user-friendly interface for fans and analysts to interact with predictions, compare teams, and simulate match outcomes.
+    \item Validation of prediction accuracy against historical matches and benchmark platforms (\cite{livescore, flashscore}).
+\end{itemize}
 
 \section{Organization of the Text}
-
+The remainder of this document is structured as follows:  
 \begin{description}
-    \item[{\hyperref[chap:literature-review]{The second chapter}}] describes ...
-    
-    \item[{\hyperref[chap:gap-analysis]{The third chapter}}] explores ...
-    
-    \item[{\hyperref[chap:system-analysis-and-design]{The fourth chapter}}] discusses ...
-    
-    \item[{\hyperref[chap:Methodology]{The fifth chapter}}] covers ...
-    
-    \item[{\hyperref[chap:conclusion]{The sixth chapter}}] examines ...
-        
+    \item[{\hyperref[chap:literature-review]{Chapter 2: Literature Review}}] reviews existing football websites, data sources, and limitations in current methodologies.  
+    \item[{\hyperref[chap:gap-analysis]{Chapter 3: Gap Analysis}}] identifies unresolved challenges in football analytics & websites.  
+    \item[{\hyperref[chap:system-analysis-and-design]{Chapter 4: System Design}}] details the architecture of the proposed platform, including data pipelines and user interface components.  
+    \item[{\hyperref[chap:Methodology]{Chapter 5: Methodology}}] explains the machine learning workflows, validation techniques, and ethical considerations.  
+    \item[{\hyperref[chap:conclusion]{Chapter 6: Conclusion}}] summarizes findings, discusses limitations, and proposes future enhancements like social media sentiment integration.  
 \end{description}
 
-Regarding the drafting of the text, the following typographic conventions were adopted for this document:
+\section*{Typographic Conventions}
+To enhance readability:  
 \begin{itemize}
-	\item Acronyms, abbreviations, and ambiguous or uncommon terms mentioned are defined in the glossary located at the end of this document;
-    \item For the first occurrence of terms included in the glossary, the following nomenclature is used: (acronym);
-	\item Terms in foreign languages or part of technical jargon are highlighted in \emph{italic}.
+    \item Acronyms (e.g., \emph{ML} for Machine Learning) are defined in the glossary and marked as (ACRONYM) at their first occurrence.
+    \item Technical terms (e.g., \emph{expected goals (xG)}) and non-English phrases are italicized.
+    \item Hyperlinks to sections/chapters are colored blue for digital formats.
 \end{itemize}
