@@ -88,6 +88,20 @@ This analysis evaluates 30 football websites across 10 critical dimensions (Tabl
     \item \textbf{Innovation (INN)}: 5 = Blockchain/NLP/AI, 1 = Static HTML content.
 \end{itemize}
 
+\subsection{Average Scores per Dimension}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{gap_radar.png}
+    \caption{Average Scores per Dimension (Scale 1–5)}
+    \label{fig:gap-radar}
+\end{figure}
+\textbf{Key Observations from Figure~\ref{fig:gap-radar}:}
+\begin{itemize}
+    \item \textbf{Severe Deficits}: Explainable AI (XAI) and API Access scored lowest (1.4 and 2.1).
+    \item \textbf{Relative Strengths}: Data Depth (DD) and Accessibility (ACC) performed best (4.2 and 3.8).
+    \item \textbf{Systemic Pattern}: Technical features (XAI, API) lag behind user-facing metrics (ACC).
+\end{itemize}
+
 \section{Gap Prioritization and Website-Specific Analysis}
 This section categorizes the 30 analyzed websites into five critical gap categories, explains their deficiencies, and maps them to the proposed system’s solutions.
 
@@ -133,9 +147,11 @@ User Engagement Shortfalls & LiveScore & Minimal AR/VR or interactive simulation
 \end{tabularx}
 \end{table}
 
+
+
 \subsection{Category 1: Explainability Deficits}
 \begin{itemize}
-\item \textbf{Impact}: Users distrust predictions they can’t understand (e.g., \textbf{WhoScored’s} 78% accurate but opaque ML models).
+\item \textbf{Impact}: Users distrust predictions they can’t understand (e.g., \textbf{WhoScored’s} 78 percentage accurate but opaque ML models).
 \item \textbf{Example}: \textbf{FourFourTwo’s} neural network predicts match outcomes but provides no insight into why Team X is favored.
 \item \textbf{Solution}: Implement model cards and SHAP waterfall plots (Figure~\ref{fig:shap }).
 \end{itemize}
@@ -167,6 +183,7 @@ User Engagement Shortfalls & LiveScore & Minimal AR/VR or interactive simulation
 \item \textbf{Example}: \textbf{LiveScore} offers scores but no interactive simulations.
 \item \textbf{Solution}: Gamified predictions with fan leaderboards.
 \end{itemize}
+
 \subsection{Website Categorization and Weaknesses}
 \begin{table}[h!]
     \centering
@@ -327,7 +344,6 @@ Football websites were classified into seven functional categories (Table~\ref{t
     \end{tabularx}
 \end{table}
 
-
 \subsection{Category-Specific Gap Analysis}
 
 \paragraph{Data Aggregators (LiveScore, FlashScore, Soccerway)}
@@ -405,6 +421,7 @@ Football websites were classified into seven functional categories (Table~\ref{t
     \item \textbf{Cross-League Coverage}: Only 4/30 score >=4. Solution: Unified data schema.
     \item \textbf{API Access}: Avg = 2.4. Solution: Develop REST API with OAuth.
 \end{itemize}
+
 
 \section{Conclusion}
 This analysis reveals systemic deficiencies in predictive transparency, cross-league integration, and real-time adaptability. The proposed system (Chapter 4) will prioritize these gaps while leveraging strengths from leaders like \textbf{WhoScored} (tactical analytics) and \textbf{LiveScore} (latency).
