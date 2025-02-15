@@ -1,78 +1,84 @@
 \chapter{System Analysis and Design}
 \label{chap:system-analysis-and-design}
 
-\intro{Brief introduction to the chapter}\\
+\section{Introduction}
+The gap analysis conducted in Chapter~\ref{chap:gap-analysis} identified several critical deficiencies in existing football analytics platforms, including a lack of explainable AI, limited cross-league coverage, and inadequate real-time adaptability. This chapter outlines the design and architecture of a proposed system that addresses these gaps by integrating advanced predictive analytics, real-time data processing, and user-centric features. The system aims to provide transparent, explainable predictions, unify data across multiple leagues, and offer sub-second latency for live match updates, thereby enhancing both expert and casual user experiences.
 
-\section{Use Cases}
+\section{Core Features}
 
-For the study of the product's use cases, diagrams were created.
-Use case diagrams (in English \emph{Use Case Diagram}) are a type of \gls{uml} diagram dedicated to describing the functions or services offered by a system, as perceived and used by the actors interacting with the system itself.
-Since the project is aimed at creating a tool for automating a process, user interactions must obviously be reduced to the bare minimum. For this reason, the use case diagrams are simple and few in number.
+\subsection{Match Predictions}
+Utilizing advanced machine learning models and statistical algorithms, the system predicts match outcomes such as win, loss, or draw. It provides probability distributions for each scenario, helping users make informed predictions. Additionally, the system forecasts specific events like goal count, first goal scorer, and clean sheets.
 
-\begin{figure}[!h] 
-    \centering 
+\subsection{Team and Player Statistics}
+A dedicated module presents detailed statistics for teams and players, including historical performance data. Metrics such as wins, losses, possession percentage, shots on target, goals scored, and defensive stats are highlighted, allowing users to analyze past and present performances effectively.
 
-    \caption{Use Case - UC0: Main Scenario}
-\end{figure}
+\subsection{League Standings}
+The system dynamically updates league standings, displaying essential data such as points, goal differences, and past season comparisons. This feature enables users to track team progress throughout the season.
 
-\begin{usecase}{0}{Main Scenario}
-\usecaseactors{Application Developer}
-\usecasepre{The developer has entered the simulation plugin within the IDE}
-\usecasedesc{The simulation window provides commands to configure, record, or run a test}
-\usecasepost{The system is ready to allow a new interaction}
-\label{uc:main-scenario}
-\end{usecase}
+\subsection{Head-to-Head Comparisons}
+Teams' historical performance against each other is analyzed, providing insights into their past match results, goal statistics, and overall competitive balance.
 
-\section{Requirements Traceability}
+\subsection{Fixture and Results Tracker}
+A calendar-based interface presents upcoming match schedules, including match dates, times, and venues. Users can also review past match results with detailed statistics such as goal scorers and key performance indicators.
 
-From a careful analysis of the requirements and use cases carried out on the project, a table was drawn up that traces the requirements in relation to the use cases.\\
-Different types of requirements were identified, and an identification code was used to distinguish them.\\
-The requirements code is structured as R(F/Q/V)(N/D/O) where:
-\begin{enumerate}
-    \item[R =] requirement
-    \item[F =] functional
-    \item[Q =] qualitative
-    \item[V =] constraint
-    \item[N =] mandatory (necessary)
-    \item[D =] desirable
-    \item[O =] optional
-\end{enumerate}
-Tables \ref{tab:functional-requirements}, \ref{tab:qualitative-requirements}, and \ref{tab:constraint-requirements} summarize the requirements and their traceability with the use cases outlined during the analysis phase.
+\subsection{Live Match Updates}
+Real-time match updates offer instant notifications regarding goals, substitutions, yellow/red cards, and other match events, ensuring users remain informed even if they are unable to watch the game live.
 
-\newpage
+\subsection{Injury and Suspension Tracker}
+A crucial tool for teams and analysts, this feature tracks injured and suspended players, estimating their return dates. It also provides impact analysis on team performance due to key absences.
 
-\begin{table}%
-\caption{Table of Functional Requirements Traceability}
-\label{tab:functional-requirements}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requirement} & \textbf{Description} & \textbf{Use Case}\\
-\hline
-RFN-1     & The interface allows configuring the type of test probes & UC1 \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{Form Guide}
+The system showcases teams' recent performance trends, displaying a sequence of results (e.g., W-W-D-L-W) and differentiating home and away performances for deeper insights.
 
-\begin{table}%
-\caption{Table of Qualitative Requirements Traceability}
-\label{tab:qualitative-requirements}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requirement} & \textbf{Description} & \textbf{Use Case}\\
-\hline
-RQD-1    & The performance of the hardware simulator must ensure the correct execution of tests and not generate false negatives & - \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{Player Heatmaps and Performance Analysis}
+Visual representations of player movements and in-game actions help analyze strengths, weaknesses, and tactical involvement. Heatmaps enhance the understanding of player positioning and contribution.
 
-\begin{table}%
-\caption{Table of Constraint Requirements Traceability}
-\label{tab:constraint-requirements}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requirement} & \textbf{Description} & \textbf{Use Case}\\
-\hline
-RVO-1    & The library for running automated tests must be reusable & - \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{Customizable Dashboards}
+Users can personalize their dashboards to highlight favorite teams, leagues, or statistical categories. This feature ensures a tailored user experience based on individual preferences.
+
+\subsection{Interactive Visualizations}
+The system employs charts, graphs, and heatmaps to make data interpretation engaging. Filters and dropdown menus enhance interactivity, allowing users to explore data dynamically.
+
+\subsection{User Interaction and Engagement}
+Users can search for teams, players, and leagues while also creating accounts to track predictions and participate in interactive features. A gamification system with leaderboards, rewards, or badges incentivizes accurate predictions.
+
+\subsection{Player Comparison Tool}
+This tool facilitates side-by-side comparisons of players based on statistics such as goals, assists, pass accuracy, and tackles. Visual elements like bar charts and radar charts improve comprehension.
+
+\subsection{Transfer Market Insights}
+A dedicated section monitors player transfers, including confirmed deals, loan agreements, and rumors, along with their projected impact on team performance.
+
+\subsection{Historical Moments and Highlights}
+A collection of iconic football moments, including legendary goals and matches, enriches user engagement. Where possible, video highlights are integrated to enhance content appeal.
+
+\subsection{Multilingual Support}
+The system accommodates a global audience by offering content in multiple languages, improving accessibility and user experience.
+
+\section{Admin Features}
+
+\subsection{Dashboard Overview}
+Administrators have access to a centralized dashboard displaying vital metrics such as active users, popular teams, prediction accuracy comparisons, and engagement statistics.
+
+\subsection{Data Management Tools}
+Admins can manage match data, team information, and player statistics. Tools include:
+\begin{itemize}
+    \item Match Data Editor: Modify match fixtures, results, and stats.
+    \item Team and Player Editor: Update rosters and player profiles.
+    \item League Management: Oversee leagues, update rules, and adjust standings.
+\end{itemize}
+
+\subsection{User Management Tools}
+Admins can track user activity, manage accounts, and assign roles such as moderators or premium users, ensuring structured user management.
+
+\subsection{Communication Tools}
+Features include:
+\begin{itemize}
+    \item Announcements: Inform users of system updates and new features.
+    \item User Support: A ticket-based support system for resolving queries and issues.
+\end{itemize}
+
+\subsection{Analytics and Reporting}
+A comprehensive reporting system tracks traffic, user engagement, and prediction accuracy. Admins can generate detailed reports to identify trends and optimize the system accordingly.
+
+\section{Conclusion}
+The Football Match Analysis System offers a holistic approach to football data analysis, integrating machine learning, interactive visualizations, and real-time updates. By catering to both users and administrators, it enhances engagement, accessibility, and overall usability.

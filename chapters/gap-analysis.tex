@@ -2,7 +2,7 @@
 \label{chap:gap-analysis}
 
 \section{Methodology}
-This analysis evaluates 30 football websites across 10 critical dimensions (Table~\ref{tab:feature-matrix}), scored on a 5-point scale (1 = Poor, 5 = Excellent). The criteria reflect both technical capabilities and user experience, focusing on gaps relevant to predictive analytics systems.
+This analysis evaluates 30 football websites across 9 critical dimensions (Table~\ref{tab:feature-matrix}), scored on a 5-point scale (1 = Poor, 5 = Excellent). The criteria reflect both technical capabilities and user experience, focusing on gaps relevant to predictive analytics systems.
 
 \subsection{Evaluation Criteria}
 \begin{itemize}
@@ -10,9 +10,8 @@ This analysis evaluates 30 football websites across 10 critical dimensions (Tabl
     \item \textbf{Predictive Analytics (PA)}: Use of ML/AI for forecasts.
     \item \textbf{Real-Time Latency (RTL)}: Speed of updates (goals, subs).
     \item \textbf{Tactical Analysis (TA)}: Heatmaps, passing networks, xG models.
-    \item \textbf{User Engagement (UE)}: Forums, quizzes, AR/VR.
     \item \textbf{Cross-League (CL)}: Coverage of 25 major leagues.
-    \textbf{Explainable AI (XAI)}: Model transparency (SHAP/LIME).
+    \item \textbf{Explainable AI (XAI)}: Model transparency (SHAP/LIME).
     \item \textbf{API Access (API)}: Developer-friendly integrations.
     \item \textbf{Innovation (INN)}: Blockchain, NLP, generative AI.
     \item \textbf{Accessibility (ACC)}: Mobile optimization, languages.
@@ -32,7 +31,7 @@ This analysis evaluates 30 football websites across 10 critical dimensions (Tabl
     \begin{itemize}
         \item \textbf{WhoScored}: Top in TA (4.8) and PA (4.5) but poor XAI (1.2).
         \item \textbf{Transfermarkt}: Best DD (4.9) but lacks RTL (1.1).
-        \item \textbf{The Athletic}: Balances UE (4.2) and TA (4.1) but no API (1.0).
+        \item \textbf{The Athletic}: Balances TA (4.1) but no API (1.0).
     \end{itemize}
 \end{itemize}
 
@@ -42,40 +41,40 @@ This analysis evaluates 30 football websites across 10 critical dimensions (Tabl
     \caption{30 Football Websites Gap Analysis Matrix}
     \label{tab:feature-matrix}
     \tiny
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Website} & \textbf{DD} & \textbf{PA} & \textbf{RTL} & \textbf{TA} & \textbf{UE} & \textbf{CL} & \textbf{XAI} & \textbf{API} & \textbf{INN} & \textbf{ACC} \\
+        \textbf{Website} & \textbf{DD} & \textbf{PA} & \textbf{RTL} & \textbf{TA} & \textbf{CL} & \textbf{XAI} & \textbf{API} & \textbf{INN} & \textbf{ACC} \\
         \hline
-        Goal.com & 4.5 & 1.2 & 3.1 & 2.0 & 3.5 & 4.8 & 1.0 & 2.5 & 2.8 & 4.2 \\
-        101 Great Goals & 2.8 & 1.0 & 2.5 & 1.5 & 3.0 & 3.2 & 1.0 & 1.0 & 3.5 & 3.0 \\
-        FourFourTwo & 4.0 & 4.5 & 1.8 & 4.8 & 3.2 & 3.5 & 1.5 & 2.0 & 4.0 & 3.5 \\
-        Transfermarkt & 4.9 & 2.0 & 1.1 & 1.2 & 1.5 & 4.9 & 1.0 & 4.0 & 1.5 & 2.5 \\
-        UEFA.com & 4.2 & 1.5 & 2.2 & 2.5 & 2.0 & 2.0 & 1.0 & 3.5 & 3.0 & 3.8 \\
-        WhoScored & 4.7 & 4.5 & 2.0 & 4.8 & 2.5 & 4.0 & 1.2 & 3.0 & 3.2 & 3.0 \\
-        Soccerway & 4.0 & 1.8 & 3.8 & 2.0 & 2.0 & 4.5 & 1.0 & 2.5 & 2.0 & 3.5 \\
-        The Athletic & 4.5 & 3.0 & 2.5 & 4.1 & 4.2 & 4.0 & 1.5 & 1.0 & 3.8 & 2.0 \\
-        Copa90 & 3.0 & 1.0 & 1.5 & 1.0 & 4.5 & 3.5 & 1.0 & 1.5 & 3.5 & 4.0 \\
-        Football Italia & 3.8 & 1.2 & 1.8 & 1.5 & 2.5 & 1.0 & 1.0 & 2.0 & 2.5 & 2.8 \\
-        World Soccer Talk & 3.5 & 1.0 & 2.0 & 1.2 & 3.8 & 3.8 & 1.0 & 1.5 & 2.0 & 3.5 \\
-        LiveScore & 3.8 & 1.5 & 4.9 & 1.0 & 2.5 & 4.5 & 1.0 & 1.2 & 1.5 & 4.8 \\
-        FC Barcelona & 4.0 & 1.0 & 2.0 & 1.8 & 4.0 & 1.0 & 1.0 & 2.5 & 4.2 & 3.5 \\
-        Manchester United & 4.2 & 1.2 & 1.5 & 1.5 & 4.2 & 1.0 & 1.0 & 2.0 & 3.8 & 3.8 \\
-        Bayern Munich & 4.1 & 1.0 & 1.8 & 1.2 & 4.5 & 1.0 & 1.0 & 2.8 & 4.5 & 3.2 \\
-        The Anfield Wrap & 3.5 & 1.0 & 1.2 & 1.0 & 4.8 & 1.0 & 1.0 & 1.0 & 2.5 & 3.0 \\
-        FootballParadise & 2.5 & 1.0 & 1.0 & 1.0 & 4.0 & 3.0 & 1.0 & 1.0 & 3.0 & 3.5 \\
-        SoccerNews & 3.2 & 1.5 & 2.2 & 1.2 & 2.8 & 3.5 & 1.0 & 1.5 & 2.2 & 3.0 \\
-        Football Manager & 4.8 & 4.0 & 1.5 & 3.5 & 4.5 & 3.2 & 1.5 & 4.5 & 4.8 & 2.5 \\
-        Jersey Watch & 2.0 & 1.0 & 1.0 & 1.0 & 3.5 & 1.0 & 1.0 & 1.0 & 2.0 & 3.0 \\
-        OneFootball & 4.2 & 2.5 & 3.5 & 2.2 & 4.0 & 4.5 & 1.2 & 2.8 & 3.5 & 4.5 \\
-        Squawka & 4.5 & 4.2 & 2.2 & 4.5 & 2.5 & 4.0 & 1.8 & 3.2 & 3.0 & 2.8 \\
-        Football365 & 3.8 & 1.2 & 2.5 & 1.5 & 4.0 & 3.5 & 1.0 & 1.8 & 2.5 & 3.2 \\
-        La Liga & 4.0 & 1.0 & 2.2 & 1.8 & 2.5 & 1.0 & 1.0 & 3.5 & 3.2 & 3.5 \\
-        Premier League & 4.5 & 1.5 & 3.0 & 2.0 & 3.0 & 1.0 & 1.0 & 4.0 & 4.0 & 4.2 \\
-        Bundesliga & 4.3 & 1.2 & 2.5 & 2.2 & 3.2 & 1.0 & 1.0 & 3.8 & 3.5 & 3.8 \\
-        MLS & 3.8 & 1.0 & 2.0 & 1.5 & 2.8 & 1.0 & 1.0 & 2.5 & 3.0 & 3.5 \\
-        AiScore & 4.0 & 4.2 & 4.5 & 3.8 & 2.5 & 4.2 & 1.5 & 3.5 & 4.0 & 3.0 \\
-        Flashscore & 4.2 & 3.5 & 4.8 & 2.5 & 2.0 & 4.8 & 1.2 & 2.2 & 3.2 & 4.5 \\
-        Onefootball & 4.0 & 2.8 & 3.8 & 2.5 & 4.2 & 4.5 & 1.5 & 3.0 & 3.8 & 4.5 \\
+        Goal.com & 4.5 & 1.2 & 3.1 & 2.0 & 4.8 & 1.0 & 2.5 & 2.8 & 4.2 \\
+        101 Great Goals & 2.8 & 1.0 & 2.5 & 1.5 & 3.2 & 1.0 & 1.0 & 3.5 & 3.0 \\
+        FourFourTwo & 4.0 & 4.5 & 1.8 & 4.8 & 3.5 & 1.5 & 2.0 & 4.0 & 3.5 \\
+        Transfermarkt & 4.9 & 2.0 & 1.1 & 1.2 & 4.9 & 1.0 & 4.0 & 1.5 & 2.5 \\
+        UEFA.com & 4.2 & 1.5 & 2.2 & 2.5 & 2.0 & 1.0 & 3.5 & 3.0 & 3.8 \\
+        WhoScored & 4.7 & 4.5 & 2.0 & 4.8 & 4.0 & 1.2 & 3.0 & 3.2 & 3.0 \\
+        Soccerway & 4.0 & 1.8 & 3.8 & 2.0 & 4.5 & 1.0 & 2.5 & 2.0 & 3.5 \\
+        The Athletic & 4.5 & 3.0 & 2.5 & 4.1 & 4.0 & 1.5 & 1.0 & 3.8 & 2.0 \\
+        Copa90 & 3.0 & 1.0 & 1.5 & 1.0 & 3.5 & 1.0 & 1.5 & 3.5 & 4.0 \\
+        Football Italia & 3.8 & 1.2 & 1.8 & 1.5 & 1.0 & 1.0 & 2.0 & 2.5 & 2.8 \\
+        World Soccer Talk & 3.5 & 1.0 & 2.0 & 1.2 & 3.8 & 1.0 & 1.5 & 2.0 & 3.5 \\
+        LiveScore & 3.8 & 1.5 & 4.9 & 1.0 & 4.5 & 1.0 & 1.2 & 1.5 & 4.8 \\
+        FC Barcelona & 4.0 & 1.0 & 2.0 & 1.8 & 1.0 & 1.0 & 2.5 & 4.2 & 3.5 \\
+        Manchester United & 4.2 & 1.2 & 1.5 & 1.5 & 1.0 & 1.0 & 2.0 & 3.8 & 3.8 \\
+        Bayern Munich & 4.1 & 1.0 & 1.8 & 1.2 & 1.0 & 1.0 & 2.8 & 4.5 & 3.2 \\
+        The Anfield Wrap & 3.5 & 1.0 & 1.2 & 1.0 & 1.0 & 1.0 & 1.0 & 2.5 & 3.0 \\
+        FootballParadise & 2.5 & 1.0 & 1.0 & 1.0 & 3.0 & 1.0 & 1.0 & 3.0 & 3.5 \\
+        SoccerNews & 3.2 & 1.5 & 2.2 & 1.2 & 3.5 & 1.0 & 1.5 & 2.2 & 3.0 \\
+        Football Manager & 4.8 & 4.0 & 1.5 & 3.5 & 3.2 & 1.5 & 4.5 & 4.8 & 2.5 \\
+        Jersey Watch & 2.0 & 1.0 & 1.0 & 1.0 & 1.0 & 1.0 & 1.0 & 2.0 & 3.0 \\
+        OneFootball & 4.2 & 2.5 & 3.5 & 2.2 & 4.5 & 1.2 & 2.8 & 3.5 & 4.5 \\
+        Squawka & 4.5 & 4.2 & 2.2 & 4.5 & 4.0 & 1.8 & 3.2 & 3.0 & 2.8 \\
+        Football365 & 3.8 & 1.2 & 2.5 & 1.5 & 3.5 & 1.0 & 1.8 & 2.5 & 3.2 \\
+        La Liga & 4.0 & 1.0 & 2.2 & 1.8 & 1.0 & 1.0 & 3.5 & 3.2 & 3.5 \\
+        Premier League & 4.5 & 1.5 & 3.0 & 2.0 & 1.0 & 1.0 & 4.0 & 4.0 & 4.2 \\
+        Bundesliga & 4.3 & 1.2 & 2.5 & 2.2 & 1.0 & 1.0 & 3.8 & 3.5 & 3.8 \\
+        MLS & 3.8 & 1.0 & 2.0 & 1.5 & 1.0 & 1.0 & 2.5 & 3.0 & 3.5 \\
+        AiScore & 4.0 & 4.2 & 4.5 & 3.8 & 4.2 & 1.5 & 3.5 & 4.0 & 3.0 \\
+        Flashscore & 4.2 & 3.5 & 4.8 & 2.5 & 4.8 & 1.2 & 2.2 & 3.2 & 4.5 \\
+        Onefootball & 4.0 & 2.8 & 3.8 & 2.5 & 4.5 & 1.5 & 3.0 & 3.8 & 4.5 \\
         \hline
     \end{tabular}
 \end{table}
@@ -111,7 +110,6 @@ This section categorizes the 30 analyzed websites into five critical gap categor
 \item \textbf{Category 2: Cross-League Limitations} (Narrow focus on single leagues)
 \item \textbf{Category 3: Real-Time Latency Issues} (Delayed updates >30 seconds)
 \item \textbf{Category 4: API/Integration Gaps} (No developer access)
-\item \textbf{Category 5: User Engagement Shortfalls} (Minimal interactive features)
 \end{itemize}
 
 \subsection{Website-Specific Gap Analysis}
@@ -140,10 +138,6 @@ API/Integration Gaps & La Liga & REST API restricted to commercial partners & Op
 \cline{2-4}
 & The Athletic & No developer access to NLP tactical reports & Publish API endpoints for third-party analysis \\
 \hline
-User Engagement Shortfalls & LiveScore & Minimal AR/VR or interactive simulations & Add 3D match replays and "what-if" scenario builders \\
-\cline{2-4}
-& Football Manager & Focused on gaming, lacks real-world coaching tools & Bridge simulations with real-time coaching dashboards \\
-\hline
 \end{tabularx}
 \end{table}
 
@@ -153,7 +147,7 @@ User Engagement Shortfalls & LiveScore & Minimal AR/VR or interactive simulation
 \begin{itemize}
 \item \textbf{Impact}: Users distrust predictions they can’t understand (e.g., \textbf{WhoScored’s} 78 percentage accurate but opaque ML models).
 \item \textbf{Example}: \textbf{FourFourTwo’s} neural network predicts match outcomes but provides no insight into why Team X is favored.
-\item \textbf{Solution}: Implement model cards and SHAP waterfall plots (Figure~\ref{fig:shap }).
+\item \textbf{Solution}: Implement model cards and SHAP waterfall plots.
 \end{itemize}
 
 \subsection{Category 2: Cross-League Limitations}
@@ -175,13 +169,6 @@ User Engagement Shortfalls & LiveScore & Minimal AR/VR or interactive simulation
 \item \textbf{Impact}: Developers can’t build atop closed systems (e.g., \textbf{La Liga’s} private API).
 \item \textbf{Example}: \textbf{The Athletic’s} NLP tactical reports are siloed.
 \item \textbf{Solution}: Public REST API with rate-limited free tier.
-\end{itemize}
-
-\subsection{Category 5: User Engagement Shortfalls}
-\begin{itemize}
-\item \textbf{Impact}: Casual fans abandon data-heavy platforms (e.g., \textbf{Squawka’s} complex dashboards).
-\item \textbf{Example}: \textbf{LiveScore} offers scores but no interactive simulations.
-\item \textbf{Solution}: Gamified predictions with fan leaderboards.
 \end{itemize}
 
 \subsection{Website Categorization and Weaknesses}
